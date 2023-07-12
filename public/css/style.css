@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-image: url(/img/bg-2.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px 10px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    color: white;
+}
+
+.menu{
+    margin: 0px 0px 0px -42px;
+}
+
+.login{
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    margin: 0px 3px;
+    font-size: 7px;
+}
+
+header img{
+    width: 14%;
+    padding: 3px;
+}
+
+/* MAIN */
+main {
+    width: 60%;
+    margin: -10px 0px 0px 0px
+}
+
+.products-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    margin: 10px;
+}
+
+.products-box div{
+    width: 50%;
+    padding: 3px;
+}
+
+.products-box img {
+    width: 100%;
+}
+
+.products-box h2{
+    font-size: 8px;
+}
+
+.products-box p{
+    font-size: 6px;
+    padding: 4px 0px;
+}
+
+.products-box a{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    font-size: 8px;
+}
+
+/* ASIDE */
+aside {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 0px -3px 0px 0px;
+
+}
+
+.aside-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 85%;
+}
+
+.aside-box .tutoriales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px #70a4bb75;
+}
+
+.aside-box div{
+    width: 100%;
+    background-color: white;
+}
+
+.aside-box .tutoriales img{
+    width: 50%;
+    height: 30%;
+}
+
+.aside-box h3{
+    background-color: white;
+    font-size: 8px;
+    width: 100%;
+    padding: 2px;
+    border: solid 1px #70a4bb75;
+    font-weight: bold;
+}
+
+.h3-tutoriales{
+    margin: 0px 0px 2px;
+}
+
+.h3-publicidad{
+    margin: 10px 0px 2px;
+}
+
+.aside-box p{
+    font-size: 6px;
+    padding: 2px;
+}
+
+.aside-box .publicidad img{
+    width: 100%;
+    border: solid 1px blue;
+}
+
+.aside-box .publicidad {
+    background-color: white;
+    padding: 2px;
+}
+
+
+@media (min-width:481px) {
+
+    header {
+       
+    }
+
+    header nav ul li {
+        font-size: 16px;
+    }
+
+    .products-box h2 {
+        font-size: 17px;
+    }
+
+    .products-box p {
+        font-size: 15px;
+    }
+
+    .products-box a {
+        font-size: 14px;
+    }
+
+    aside {
+        margin: 0px -18px 0px 0px
+    }
+
+    .aside-box h3 {
+        font-size: 16px;
+    }
+
+    .aside-box p {
+        font-size: 13px;
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        margin: 0 53px 10px;
+    }
+
+    .products-box a {
+        font-size: 17px;
+    }
+    
+    aside {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1179px) {
+    header {
+        margin: 0 78px 10px;
+    }
+    
+    main {
+        width: 60%;
+    }
+
+    .products-box a {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+
+    aside {
+        width: 23%;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+}
